@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>Status &mdash; </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <div id="overlayer"></div>
+    <div class="loader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <div class="site-wrap">
+
+        <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div> <!-- .site-mobile-menu -->
+
+
+        <div class="site-navbar-wrap">
+            <div class="site-navbar-top">
+                <div class="container py-3">
+                    <div class="row align-items-center">
+                        <div class="col-6">
+
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex ml-auto">
+                                <a href="#" class="d-flex align-items-center ml-auto mr-4">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-navbar site-navbar-target js-sticky-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-2">
+                            <h1 class="my-0 site-logo"><a href="index.html">VIR</a></h1>
+                        </div>
+                        <div class="col-10">
+                            <nav class="site-navigation text-right" role="navigation">
+                                <div class="container">
+                                    <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#"
+                                            class="site-menu-toggle js-menu-toggle text-white"><span
+                                                class="icon-menu h3"></span></a></div>
+
+                                    <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
+                                        <li>
+                                            <a href="index.html" class="nav-link">Home</a>
+                                        </li>
+                                        <!-- <li class="has-children">
+                                            <a href="#about-section" class="nav-link">About Us</a>
+                                            <ul class="dropdown arrow-top">
+                                                <li><a href="#our-team-section" class="nav-link">Team</a></li>
+                                                <li><a href="#pricing-section" class="nav-link">Pricing</a></li>
+                                                <li><a href="#faq-section" class="nav-link">FAQ</a></li>
+                                                <li class="has-children">
+                                                    <a href="#">More Links</a>
+                                                    <ul class="dropdown">
+                                                        <li><a href="#">Menu One</a></li>
+                                                        <li><a href="#">Menu Two</a></li>
+                                                        <li><a href="#">Menu Three</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li> -->
+                                        <li> <a href="statusall.html" class="nav-link">Dashboard</a> </li>
+                                        <li><a href="table.html" class="nav-link">Table</a> </li>
+                                        <!-- <li><a href="#news-section" class="nav-link">News</a></li>
+                                        <li><a href="#services-section" class="nav-link">Services</a></li>
+                                        <li><a href="#contact-section" class="nav-link">Contact</a></li> -->
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-blocks-cover overlay" style="background-image: url(images/hero_bg_1.jpg);" data-aos="fade"
+            data-stellar-background-ratio="0.5" id="home-section">
+            <div class="container">
+                <div class="row align-items-center text-center justify-content-center">
+                    <div class="col-md-9">
+                        <br><br><br><br><br><br>
+                        <h1 class="text-uppercase">Status</h1>
+                        <span class="sub-text mb-3 d-block"><em>The purpose of this project is to identify the status of
+                         public restrooms and count the number of users each day </em></span>
+                          <img src="images/restroom6.png" alt="Image" class="img-fluid">
+                          
+                                 <div id="circle"class="play-button d-block"><p>1</p></div>
+                                 <div id="circle1"class="play-button d-block"><p>2</p></div>
+                     <div id="circle2"class="play-button d-block"></div>
+                     <h4 class="text1">Occupied<p></p>ไม่ว่าง</h4>
+                     <div id="circle3"class="play-button d-block"> </div>
+                     <h4 class="text2">Available<p></p>ว่าง</h4>
+                                 <!-- <div id="circle4"class="play-button d-block"></div>
+                                 <h4 class="text3">In-service<p></p>งดใช้ห้องน้ำชั่วคราว</h4>   -->
+                                 <br><br><br><br>
+                                <!-- <h3>Room1:</h3>
+                                 <h4 id="textstatus">show data</h4>  -->
+                                 <!-- <h3>Room2:</h3>
+                                 <h4 id="status2">show data</h4>  -->
+                                                    
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div> 
+    <br>
+    
+    <!-- <div id="box2"></div> -->
+    <div class="container">
+        <div class="row align-items-center text-center justify-content-center">
+            <div class="col-md-9">
+                <h3>สถานะการใช้ห้องน้ำ</h3>
+            </div>
+        </div>
+    </div> <br> 
+    <div class="container">   
+        <div class="row">
+           <div class="col-lg-6 mb-4">
+             <div class="card-body">
+                   
+                   <div id="box3">
+                    <h5 class="text-white text-center ">กระดาษชำระ</h5>
+                    <h1 class="text-white text-center "id="ultrasonic">show data</h1>
+                </div>
+              </div>
+          </div>
+      
+     
+           <div class="col-lg-6 mb-4">
+                <div class="card-body">
+                     
+                   <div id="box4">
+                    <h5 class="text-white text-center ">คุณภาพอากาศในห้องน้ำ</h5>
+                    <h1 class="text-white text-center "id="air_quality">show data</h1>
+                </div>
+              </div>
+           </div>
+          
+            <!-- <div class="col-lg-6 mb-4">
+                 <div class="card-body">
+                      <div id="box3">
+                        <h5 class="text-white text-center ">กระดาษชำระ</h5>
+                        <h1 class="text-white text-center "id="ultrasonic">show data</h1>
+                    </div>
+                 </div>
+            </div> -->
+
+
+            <!-- <div class="col-lg-6 mb-4">
+                <div class="card-body">
+                     <div id="box4">
+                       <h5 class="text-white text-center ">คุณภาพอากาศในห้องน้ำ</h5>
+                       <h1 class="text-white text-center "id="air_quality">show data</h1>
+                   </div>
+                </div>
+           </div> -->
+           
+        </div>  
+    </div>          
+    
+           
+ 
+    <div style="display: none;"id="buttonState"></div>
+    <div style="display: none;"id="buttonState2"></div>
+    
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBPfOiPzd_qg0f_8KvYH2WCOaBNNJgJ14g",
+    authDomain: "virpj-5c808.firebaseapp.com",
+    databaseURL: "https://virpj-5c808.firebaseio.com",
+    projectId: "virpj-5c808",
+    storageBucket: "virpj-5c808.appspot.com",
+    messagingSenderId: "954404746522",
+    appId: "1:954404746522:web:b8ee79b967110fb16e68a3",
+    measurementId: "G-MK43078CWB"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.database();
+</script>
+<script type="text/javascript" src=js/app.js></script>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
