@@ -40,7 +40,7 @@ function showData(){
 var data1 = document.getElementById("Countbutton1");
 
 var db_data1 = firebase.database().ref("LM1");
-db_data1.on('child_added',snap =>{
+db_data1.on('value',snap =>{
   
     data1.innerText = snap.val()["buttonPushCounter"];
     // console.log(data1.innerText);
@@ -55,7 +55,7 @@ var data2 = document.getElementById("Countbutton2");
 var db_data2 = firebase.database().ref("LM2");
 
 
-db_data2.on('child_added',snap =>{
+db_data2.on('value',snap =>{
     data2.innerText = snap.val()["buttonPushCounter2"];
     
     var data6 = document.getElementById("CountbuttonSum");
@@ -75,7 +75,7 @@ db_data2.on('child_added',snap =>{
 var data3 = document.getElementById("buttonState");
 var db_data3 = firebase.database().ref("LM1");
 
-db_data3.on('child_added',snap =>{
+db_data3.on('value',snap =>{
     data3.innerText = snap.val()["buttonState"];
     console.log(data3.innerText);
 
@@ -93,7 +93,7 @@ db_data3.on('child_added',snap =>{
 var data4 = document.getElementById("buttonState2");
 var db_data4 = firebase.database().ref("LM2");
 
-db_data4.on('child_added',snap =>{
+db_data4.on('value',snap =>{
     data4.innerText = snap.val()["buttonState2"];
    
     if ( data4.innerText == 1) {
@@ -110,9 +110,9 @@ db_data4.on('child_added',snap =>{
 var data5 = document.getElementById("ultrasonic");
 var db_data5 = firebase.database().ref("Ultrasonic");
 
-db_data5.on('child_added',snap =>{
+db_data5.on('value',snap =>{
     data5.innerText = snap.val()["distance"];
-    if ( data5.innerText <=13 ) {
+    if ( data5.innerText <=18 ) {
         ultra1();
         } else {
         ultra2();
@@ -122,7 +122,7 @@ db_data5.on('child_added',snap =>{
 var data6 = document.getElementById("air_quality");
 var db_data6 = firebase.database().ref("MQ135");
 
-db_data6.on('child_added',snap =>{
+db_data6.on('child add',snap =>{
     data6.innerText = snap.val()["air_quality"];
     console.log(data6.innerText);
     if ( data6.innerText <=200 ) {
