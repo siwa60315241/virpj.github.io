@@ -122,7 +122,7 @@ db_data5.on('value',snap =>{
 var data6 = document.getElementById("air_quality");
 var db_data6 = firebase.database().ref("MQ135");
 
-db_data6.on('child add',snap =>{
+db_data6.on('value',snap =>{
     data6.innerText = snap.val()["air_quality"];
     console.log(data6.innerText);
     if ( data6.innerText <=200 ) {
